@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form - V on C</title>
+    <link rel="stylesheet" href="student_form.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="student-form">
+            <h2>Register for Project ViE at V OnC</h2>
+            <p>
+                Project Vi at V on C offers students and interns a unique opportunity to dive into advanced technology 
+                and innovation. Participants gain hands-on experience working on real-time projects, fostering skills 
+                in cutting-edge areas and preparing them for future tech careers.
+            </p>
+            <form action="student_form.php" method="POST" enctype="multipart/form-data">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select><br><br>
+
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required><br><br>
+
+                <label for="profile_picture">Profile Picture:</label>
+                <input type="file" id="profile_picture" name="profile_picture" accept=".jpg,.jpeg,.png,.pdf" required><br><br>
+
+                <label for="mobile">Primary Mobile No.:</label>
+                <input type="text" id="mobile" name="mobile" required><br><br>
+
+                <label for="whatsapp">WhatsApp No.:</label>
+                <input type="text" id="whatsapp" name="whatsapp" required><br><br>
+
+                <label for="college">College Name:</label>
+                <input type="text" id="college" name="college" required><br><br>
+
+                <label for="year">Year of Study:</label>
+                <input type="text" id="year" name="year" required><br><br>
+
+                <label for="branch">Stream/Branch:</label>
+                <input type="text" id="branch" name="branch" required><br><br>
+
+                <label for="roll_no">Roll No./H.T. No.:</label>
+                <input type="text" id="roll_no" name="roll_no" required><br><br>
+
+                <label for="skills">Your Good In:</label>
+                <input type="text" id="skills" name="skills" required><br><br>
+
+                <label for="upi_code">UPI Scan Code:</label>
+                <div class="upi-scan-section">
+                    <img src="qrcode.jpg" alt="UPI QR Code" class="qr-code">
+                </div>
+<br><br>
+
+
+                <label for="payment_receipt">Payment Receipt:</label>
+                <input type="file" id="payment_receipt" name="payment_receipt" accept=".jpg,.jpeg,.png,.pdf" required><br><br>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 V on C. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & Machine Learning Integration Job Application</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden; /* Prevent scrollbar */
+        }
+
+        .form-container {
+            background-color: rgba(28, 28, 28, 0.95);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+            width: 100%;
+            max-width: 700px;
+            text-align: center;
+            overflow-y: auto; /* Allow scrolling within the form container */
+            max-height: 80vh; /* Prevent the form from growing too tall */
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            background: linear-gradient(90deg, #bb86fc, #03dac6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+            color: #e0e0e0;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: #1a1a1a;
+            color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border: 2px solid #bb86fc;
+        }
+
+        button {
+            background: linear-gradient(90deg, #bb86fc, #03dac6);
+            color: #121212;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 6px 20px rgba(187, 134, 252, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(187, 134, 252, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>AI & Machine Learning Integration Job Application</h1>
+        
+        <form action="ai.php" method="POST" enctype="multipart/form-data">
+            <!-- Personal Information Section -->
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <!-- Skills Section -->
+            <label for="skills">Skills (comma separated, e.g., Python, TensorFlow, etc.):</label>
+            <input type="text" id="skills" name="skills" required>
+
+            <label for="experience">Years of Experience in AI & Machine Learning:</label>
+            <input type="number" id="experience" name="experience" min="0" required>
+
+            <label for="projects">Relevant Projects (optional):</label>
+            <textarea id="projects" name="projects" placeholder="Provide details of any relevant AI/ML projects"></textarea>
+
+            <label for="portfolio">Portfolio/Website (optional):</label>
+            <input type="url" id="portfolio" name="portfolio">
+
+            <!-- Work Experience Section -->
+            <label for="experienceDetails">Relevant Work Experience (if any):</label>
+            <textarea id="experienceDetails" name="experienceDetails"></textarea>
+
+            <!-- Resume Upload Section -->
+            <label for="resume">Upload Resume (PDF):</label>
+            <input type="file" id="resume" name="resume" accept=".pdf" required>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Form container inside the modal */
+form {
+    background-color: black;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+p {
+    color: white;
+}
+.container {
+    margin-top: 100px;
+    margin-left: 550px;
+    margin-right: 500px;
+}
+
+.logo {
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    margin-left: 3 rem;
+}
+
+/* Input fields */
+.auth-input {
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+.auth-submit {
+    padding: 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Placeholder text for input fields */
+.auth-input::placeholder {
+    color: #999;
+}
+
+/* Footer with optional links */
+.auth-footer {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+/* Links inside the footer */
+.auth-footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Optional close button style (if you want to add one) */
+.auth-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #aaa;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.auth-close:hover {
+    color: #333;
+}

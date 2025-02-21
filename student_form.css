@@ -1,0 +1,180 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header */
+header {
+    background-color: #1a1a1a;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Student Form Section */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #121212;
+}
+
+.student-form {
+    background-color: rgba(28, 28, 28, 0.95);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+    max-width: 500px;
+    width: 100%;
+}
+
+.student-form h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    background: linear-gradient(90deg, #bb86fc, #03dac6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.student-form p {
+    color: #ccc;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.student-form label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+    color: #e0e0e0;
+}
+
+.student-form input,
+.student-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.student-form input:focus,
+.student-form select:focus {
+    outline: none;
+    border: 2px solid #bb86fc;
+}
+
+.student-form input[type="file"] {
+    border: none;
+    background-color: transparent;
+    color: #ccc;
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+.student-form button {
+    background: linear-gradient(90deg, #bb86fc, #03dac6);
+    color: #121212;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(187, 134, 252, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-form button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(187, 134, 252, 0.8);
+}
+
+/* UPI QR Code Section */
+.upi-scan-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.qr-code {
+    width: 210px;
+    height: 250px;
+    object-fit: contain;
+    border: 1px solid #555;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 15px;
+    color: #e0e0e0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

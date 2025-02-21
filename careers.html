@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Opportunities</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            background: linear-gradient(90deg, #bb86fc, #03dac6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+        }
+
+        .job-list {
+            width: 100%;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .job-card {
+            background-color: rgba(28, 28, 28, 0.95);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .job-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .job-card h2 {
+            font-size: 1.8rem;
+            color: #bb86fc;
+            margin-bottom: 10px;
+        }
+
+        .job-card p {
+            font-size: 1rem;
+            color: #c7c7c7;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            font-size: 1rem;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .apply-button {
+            display: inline-block;
+            padding: 12px 32px;
+            font-size: 1rem;
+            color: #121212;
+            background: linear-gradient(90deg, #bb86fc, #03dac6);
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 6px 20px rgba(187, 134, 252, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .apply-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(187, 134, 252, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Job Opportunities</h1>
+
+    <div class="job-list">
+        <!-- Student Internship program -->
+        <div class="job-card">
+            <h2>Student Internship Program</h2>
+            <p><strong>Job Description:</strong> We are excited to offer a dynamic and engaging Student Internship Program for enthusiastic and motivated students. This program provides an excellent opportunity to gain hands-on experience, develop new skills, and contribute meaningfully to real-world projects in a professional environment.</p>
+            <div class="skills">
+                <strong>Required Skills:</strong> Any skills
+            </div>
+            <a href="student_form.html" class="apply-button">Apply Now</a>
+        </div>
+
+        <!-- Full-Stack Developer -->
+        <div class="job-card">
+            <h2>Full-Stack Developer</h2>
+            <p><strong>Job Description:</strong> Responsible for building and maintaining both front-end and back-end components of web applications. Develop dynamic websites using HTML, CSS, JavaScript, Node.js, and Python to meet client requirements.</p>
+            <div class="skills">
+                <strong>Required Skills:</strong> HTML, CSS, JavaScript, Node.js, Python, REST APIs, Git
+            </div>
+            <a href="fullstack.html" class="apply-button">Apply Now</a>
+        </div>
+
+        <!-- AI & Machine Learning Integration -->
+        <div class="job-card">
+            <h2>AI & Machine Learning Integration</h2>
+            <p><strong>Job Description:</strong> Integrating AI and machine learning models into applications to improve functionality and performance. Develop algorithms to process large datasets and implement predictive analytics for smarter decision-making.</p>
+            <div class="skills">
+                <strong>Required Skills:</strong> Python, TensorFlow, Scikit-learn, NLP, Data Science, Machine Learning Algorithms
+            </div>
+            <a href="ai.html" class="apply-button">Apply Now</a>
+        </div>
+
+        <!-- Mobile Application Developer -->
+        <div class="job-card">
+            <h2>Mobile Application Developer</h2>
+            <p><strong>Job Description:</strong> Responsible for developing mobile applications for iOS and Android platforms using frameworks like React Native, Flutter, or native technologies to create high-performance apps.</p>
+            <div class="skills">
+                <strong>Required Skills:</strong> React Native, Flutter, Swift, Java, Mobile App Development, UI/UX Design
+            </div>
+            <a href="mob.html" class="apply-button">Apply Now</a>
+        </div>
+
+        <!-- Cloud Infrastructure and DevOps -->
+        <div class="job-card">
+            <h2>Cloud Infrastructure and DevOps Engineer</h2>
+            <p><strong>Job Description:</strong> Design, implement, and maintain cloud infrastructure. Work with DevOps tools to automate and improve development pipelines, focusing on scalability and reliability.</p>
+            <div class="skills">
+                <strong>Required Skills:</strong> AWS, Azure, Google Cloud, Docker, Kubernetes, CI/CD, Terraform, Ansible
+            </div>
+            <a href="cloud.html" class="apply-button">Apply Now</a>
+        </div>
+
+        <!-- UI/UX Designer -->
+        <div class="job-card">
+            <h2>UI/UX Designer</h2>
+            <p><strong>Job Description:</strong> Create intuitive, user-centered designs for web and mobile applications. Work closely with developers to ensure the technical feasibility of designs and enhance the user experience.</p>
+            <div class="skills">
+                <strong>Required Skills:</strong> Adobe XD, Figma, Sketch, User Research, Wireframing, Prototyping, HTML/CSS
+            </div>
+            <a href="ui.html" class="apply-button">Apply Now</a>
+        </div>
+    </div>
+
+</body>
+</html>

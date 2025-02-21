@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovative Investment Ideas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            flex-direction: column;
+        }
+        .main-header {
+            font-size: 4rem;
+            color: #ffffff;
+            margin: 40px 0;
+            background: linear-gradient(90deg, #ff8a00, #e52e71);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+        }
+        .container {
+            background-color: rgba(28, 28, 28, 0.95);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+            max-width: 700px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        h1, h2 {
+            color: #ffffff;
+        }
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(90deg, #bb86fc, #03dac6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+        }
+        p {
+            color: #b0b0b0;
+            line-height: 1.8;
+        }
+        .form-group {
+            margin-bottom: 30px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: #e0e0e0;
+            text-align: left;
+        }
+        select, input[type="text"], input[type="file"], button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #1a1a1a;
+            color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #1a1a1a;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    resize: vertical; /* Allow resizing only vertically */
+}
+textarea:focus {
+    outline: none;
+    border: 2px solid #bb86fc;
+}
+
+        input:focus, select:focus {
+            outline: none;
+            border: 2px solid #bb86fc;
+        }
+        button {
+            background: linear-gradient(90deg, #bb86fc, #03dac6);
+            color: #121212;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 6px 20px rgba(187, 134, 252, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(187, 134, 252, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-header">Innovative Ideas Platform</div>
+    <div class="container">
+        <h1>Innovative Investment Ideas</h1>
+        <p>
+            Innovation has always been the cornerstone of groundbreaking businesses and industries. 
+            Investing in new and creative ideas not only drives economic growth but also opens up 
+            endless possibilities for advancement. From harnessing artificial intelligence to improve 
+            healthcare, finance, and education, to developing sustainable technologies that help combat 
+            climate change, innovation is at the forefront of shaping our future.
+        </p>
+        <p>
+            This platform allows you to explore innovative investment ideas, particularly in the field of AI. 
+            Select from the dropdown below to get inspired or submit your own unique idea for consideration. 
+            We believe that the next big breakthrough could come from anyone, and we're here to nurture those ideas.
+        </p>
+
+        <form method="post" action="submit_idea.php" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="ai-ideas">Select an AI-Related Idea:</label>
+                <select id="ai-ideas" name="ai_idea">
+                    <option value="">-- Choose an Idea --</option>
+                    <option value="ai-healthcare">AI in Healthcare</option>
+                    <option value="ai-finance">AI in Financial Analysis</option>
+                    <option value="ai-education">AI-Powered Education Tools</option>
+                    <option value="ai-sustainability">AI for Sustainable Development</option>
+                    <option value="ai-agriculture">AI in Agriculture</option>
+                    <option value="ai-manufacturing">AI in Manufacturing Automation</option>
+                    <option>Others</option>
+                </select>
+                <div class="form-group">
+                <label for="other-idea">If chose others, specify your idea</label>
+                <input type="text" id="other-idea" name="other_idea" placeholder="Specify your innovative idea here...">
+            </div>
+            </div>
+            <h2>Describe Your Innovative Idea</h2>
+            <p>
+                Have an innovative idea that could change the world? Share your vision with us by describing 
+                it in the form below. Your ideas could lead to significant advancements, and we are eager to 
+                support groundbreaking innovations.
+            </p>
+            <div class="form-group">
+                <label for="user-idea">Your Idea:</label>
+                <textarea id="user-idea" name="user_idea" rows="10" cols="50" placeholder="Enter your innovative idea here..."></textarea>
+            </div>
+            <h2>Upload Documents or Images</h2>
+            <p>
+                You can upload relevant documents or images that help illustrate your idea. Supported formats include .jpg, .png, .pdf, .docx.
+            </p>
+            <div class="form-group">
+                <label for="idea-files">Upload files:</label>
+                <input type="file" id="idea-files" name="idea_files[]" accept=".jpg, .jpeg, .png, .pdf, .docx" multiple>
+            </div>
+            
+            <button type="submit">Submit Idea</button>
+        </form>
+    </div>
+</body>
+</html>

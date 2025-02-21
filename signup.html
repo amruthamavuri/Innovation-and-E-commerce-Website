@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <title>signup</title>
+</head>
+<body>
+    <form class="container" action="register_action.php" method="POST">
+        <img src="logo.jpg" class="logo">
+        <input type="text" class="auth-input" id="fullName" name="name" placeholder="Full Name" required>
+        <input type="email" class="auth-input" name="email" placeholder="Email" required>
+        <input type="password" class="auth-input" name="password" placeholder="Password" required>
+        <input type="tel" class="auth-input" name="phone" placeholder="Phone number" required>
+        <button type="submit" class="auth-submit">Create Account</button>
+        <div class="auth-footer">
+                By registering you agree to our
+                <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+                <p>Already have an account?<a href="signin.html">Sign in</a></p>
+            </div>
+    </form>
+</body>
+</html>
